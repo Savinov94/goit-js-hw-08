@@ -24,9 +24,9 @@ const fillFormFromLocalStorage = () => {
 };
 
 
-emailInput.addEventListener('input', updateLocalStorage);
-messageTextarea.addEventListener('input', updateLocalStorage);
-
+form.addEventListener('input', (event) => {
+  updateLocalStorage();
+});
 
 window.addEventListener('load', fillFormFromLocalStorage);
 
